@@ -7,15 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f8951ef900.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="src/plane-solid.svg">
+    <link rel="icon" type="image/x-icon" href="src/utensils-solid.svg">
     <title>TP Codo a Codo Nodejs</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #9D6EE9;">
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: rgb(96, 65, 21);">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <i class="fa-solid fa-plane fa-xl ms-2" style="color: #4C258D;"></i>
-                <span class="fs-4 ms-2 ">Despegamos</span>
+                <i class="fa-solid fa-utensils fa-xl ms-2" style="color: rgb(216, 183, 110);"></i>
+                <span class="fs-4 ms-2 ">A Comer</span>
                 
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,58 +24,71 @@
             <div id="navbarSupportedContent" class="collapse navbar-collapse flex-grow-0">
                 <ul class="nav">
                     <li class="nav-item"><a href="#" class="nav-link link-light" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-secondary text-white-50">Mi Reserva</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-secondary text-white-50">Estado del vuelo</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-secondary text-white-50">Contactanos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-warning text-white-50">Menú</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-warning text-white-50">Mi Pedido</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-warning text-white-50">Login</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="search">
+        <section id="carousel">
             <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner" >
                     <div class="carousel-item active" data-bs-interval="2000" >
-                        <img src="src/Avion.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
+                        <img src="src/sushi.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
                     </div>
                     <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/Bariloche.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
+                        <img src="src/pizza.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
                     </div>
                     <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/Calafate.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
+                        <img src="src/salad.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
                     </div>
                     <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/Cerro.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
+                        <img src="src/pasta.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
                     </div>
                     <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/Iguazu.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
+                        <img src="src/parrilla.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
                     </div>
                     <div class="container hidden-xs image-txt text-white">
                         <div class="col-md-12 text-center position-relative">
-                            <h1>RESERVÁ TU PRÓXIMO VIAJE</h1>
-                            <div class="search"></div>
+                            <div class="box">
+                                <h1 class="p-3">Elegí la película, nosotros nos encargamos de la cena</h1>
+                                <a class="btn btn-outline-light">Hacé tu pedido</a>
+                            </div>
                         </div>
-                    </div>
-                    
-
                     </div>
                 </div>
             </div>
-
         </section>
-        <section id="cards">
-            
+        <section id="card">
+            <div class="card mb-3 border-0 bg-dark rounded-0 " >
+                <div class="row g-0">
+                    <div class="col-md-3 border-end border-white">
+                        <img src="src/platos.jpg" class="img-fluid rounded-start">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body text-white text-center p-5">
+                            <h5 class="card-title">Nuestra Cocina</h5>
+                            <p class="card-text"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus fugit deserunt quia, asperiores, aperiam, dolores perspiciatis ab dolore exercitationem explicabo ut. Omnis similique quae aliquam, laboriosam atque odio iste.</small></p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 border-start border-white">
+                        <img src="src/wok.jpg" class="img-fluid rounded-start">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="navbar navbar-expand-md justify-content-center text-center" style="background-color: #473368;">
+    <footer class="navbar navbar-expand-md justify-content-center text-center" style="background-color: #362207;">
         <ul class="nav ">
-          <li class="nav-item"><a href="#" class="nav-link text-white ">Preguntas frecuentes</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white ">Contactanos</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white ">Términos y condiciones</a></li>
-          <li class="nav-item"><a href="#" class="nav-link text-white ">Privacidad</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white ">Preguntas frecuentes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white ">Contactanos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white ">Términos y condiciones</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white ">Privacidad</a></li>
         </ul>
-      </footer> 
+    </footer> 
 </body>
 </html>
