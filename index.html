@@ -1,94 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="STYLESHEET" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/f8951ef900.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="src/utensils-solid.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="STYLESHEET" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./lib/bootstrap-extension.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f8951ef900.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./lib/bootstrap-extension.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/utensils-solid.svg" />
     <title>TP Codo a Codo Nodejs</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: rgb(96, 65, 21);">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <i class="fa-solid fa-utensils fa-xl ms-2" style="color: rgb(216, 183, 110);"></i>
-                <span class="fs-4 ms-2 ">A Comer</span>
-                
+  </head>
+  <body>
+    <div class="alert alert-warning alert-cookie" data-cookie="be-okCookie">
+      <p>Our website uses cookies for a better user experience...</p>
+      <button class="btn btn-warning">Accept</button>
+    </div>
+    <header class="multi-navbar multi-navbar-expand-lg">
+      <div class="topbar bg-black collapsable justify-content-between">
+        <ul>
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-facebook"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-twitter"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-youtube"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                ></path>
+              </svg>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarSupportedContent" class="collapse navbar-collapse flex-grow-0">
-                <ul class="nav">
-                    <li class="nav-item"><a href="#" class="nav-link link-light" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-warning text-white-50">Menú</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-warning text-white-50">Mi Pedido</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link-warning text-white-50">Login</a></li>
-                </ul>
-            </div>
-        </nav>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">Ingresar</a></li>
+          <li><a href="#">Registrarse</a></li>
+        </ul>
+      </div>
+      <!-- 
+      <nav
+        class="navbar navbar-expand-md navbar-dark sticky-top"
+        style="background-color: rgb(96, 65, 21)"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+        >
+          <i
+            class="fa-solid fa-utensils fa-xl ms-2"
+            style="color: rgb(216, 183, 110)"
+          ></i>
+          <span class="fs-4 ms-2">A Comer</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          id="navbarSupportedContent"
+          class="collapse navbar-collapse flex-grow-0"
+        >
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link link-light" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-warning text-white-50">Menú</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-warning text-white-50"
+                >Mi Pedido</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link link-warning text-white-50">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+      <nav
+        class="justify-content-between"
+        style="background-color: rgb(96, 65, 21)"
+      >
+        <a
+          href="index.html"
+          class="multi-navbar-brand d-flex align-items-center text-white text-decoration-none"
+        >
+          <i
+            class="fa-solid fa-utensils fa-xl ms-2"
+            style="color: rgb(216, 183, 110)"
+          ></i>
+          <span class="fs-4 ms-2">A Comer</span>
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Conocé nuestro menú</a></li>
+          <!-- <li>
+            <a class="dropdown-toggle">Products</a>
+            <ul>
+              <li><a href="#product-1">Product 1</a></li>
+              <li><a href="#product-2">Product 2</a></li>
+              <li><a href="#product-3">Another product</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#">Hacé tu pedido</a></li>
+          <li><a href="#">Seguí tu pedido</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="carousel">
-            <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
-                <div class="carousel-inner" >
-                    <div class="carousel-item active" data-bs-interval="2000" >
-                        <img src="src/sushi.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/pizza.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/salad.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/pasta.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
-                    </div>
-                    <div class="carousel-item " data-bs-interval="2000">
-                        <img src="src/parrilla.jpg" class="position-relative d-block img-ds img-rs" style="filter: brightness(0.5);">
-                    </div>
-                    <div class="container hidden-xs image-txt text-white">
-                        <div class="col-md-12 text-center position-relative">
-                            <div class="box">
-                                <h1 class="p-3">Elegí la película, nosotros nos encargamos de la cena</h1>
-                                <a class="btn btn-outline-light">Hacé tu pedido</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="d-none d-md-block">
+        <div
+          class="btn btn-chocolate text-white me-5 mb-5 p-3 rounded-square"
+          id="toTop"
+        ></div>
+      </div>
+      <section id="carousel">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="src/sushi.jpg"
+                class="position-relative d-block img-ds img-rs"
+                style="filter: brightness(0.5)"
+              />
             </div>
-        </section>
-        <section id="card">
-            <div class="card mb-3 border-0 bg-dark rounded-0 " >
-                <div class="row g-0">
-                    <div class="col-md-3 border-end border-white">
-                        <img src="src/platos.jpg" class="img-fluid rounded-start">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body text-white text-center p-5">
-                            <h5 class="card-title">Nuestra Cocina</h5>
-                            <p class="card-text"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus natus fugit deserunt quia, asperiores, aperiam, dolores perspiciatis ab dolore exercitationem explicabo ut. Omnis similique quae aliquam, laboriosam atque odio iste.</small></p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 border-start border-white">
-                        <img src="src/wok.jpg" class="img-fluid rounded-start">
-                    </div>
-                </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="src/pizza.jpg"
+                class="position-relative d-block img-ds img-rs"
+                style="filter: brightness(0.5)"
+              />
             </div>
-        </section>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="src/salad.jpg"
+                class="position-relative d-block img-ds img-rs"
+                style="filter: brightness(0.5)"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="src/pasta.jpg"
+                class="position-relative d-block img-ds img-rs"
+                style="filter: brightness(0.5)"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="src/parrilla.jpg"
+                class="position-relative d-block img-ds img-rs"
+                style="filter: brightness(0.5)"
+              />
+            </div>
+            <div class="container hidden-xs image-txt text-white">
+              <div class="col-md-12 text-center position-relative">
+                <div class="box">
+                  <h1 class="p-3">
+                    Elegí la película, nosotros nos encargamos de la cena
+                  </h1>
+                  <a class="btn btn-outline-light">Hacé tu pedido</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="card">
+        <div class="card mb-3 border-0 bg-dark rounded-0">
+          <div class="row g-0">
+            <div class="col-md-3 border-end border-white">
+              <img src="src/platos.jpg" class="img-fluid rounded-start" />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body text-white text-center p-5">
+                <h5 class="card-title">Nuestra Cocina</h5>
+                <p class="card-text">
+                  <small
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusamus natus fugit deserunt quia, asperiores, aperiam,
+                    dolores perspiciatis ab dolore exercitationem explicabo ut.
+                    Omnis similique quae aliquam, laboriosam atque odio
+                    iste.</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 border-start border-white">
+              <img src="src/wok.jpg" class="img-fluid rounded-start" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container hidden-xs image-txt text-white">
+          <div class="col-md-12 text-center position-relative">
+            <h2 class="p-3 text-chocolate">Mirá las ofertas de la semana</h2>
+          </div>
+        </div>
+        <div class="slider position-relative d-block img-ds img-rs">
+          <div class="scroll position-relative img-ds img-rs">
+            <div class="slider-item">
+              <div class="card mb-3 text-center" style="width: 18rem">
+                <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Especialized MUSSA</h5>
+                  <p class="card-text">
+                    La mejor pizza con la que cuenta la casa, el queso es el
+                    factor determinante
+                  </p>
+                  <h5>550 GRAMOS DE QUESO.</h5>
+                  <a href="#" class="btn btn-night">Pedila ya!</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item">
+                <div class="card mb-3 text-center" style="width: 18rem">
+                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Especialized MUSSA</h5>
+                    <p class="card-text">
+                      La mejor pizza con la que cuenta la casa, el queso es el
+                      factor determinante
+                    </p>
+                    <h5>550 GRAMOS DE QUESO.</h5>
+                    <a href="#" class="btn btn-night">Pedila ya!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item">
+                <div class="card mb-3 text-center" style="width: 18rem">
+                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Especialized MUSSA</h5>
+                    <p class="card-text">
+                      La mejor pizza con la que cuenta la casa, el queso es el
+                      factor determinante
+                    </p>
+                    <h5>550 GRAMOS DE QUESO.</h5>
+                    <a href="#" class="btn btn-night">Pedila ya!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item">
+                <div class="card mb-3 text-center" style="width: 18rem">
+                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Especialized MUSSA</h5>
+                    <p class="card-text">
+                      La mejor pizza con la que cuenta la casa, el queso es el
+                      factor determinante
+                    </p>
+                    <h5>550 GRAMOS DE QUESO.</h5>
+                    <a href="#" class="btn btn-night">Pedila ya!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item">
+                <div class="card mb-3 text-center" style="width: 18rem">
+                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Especialized MUSSA</h5>
+                    <p class="card-text">
+                      La mejor pizza con la que cuenta la casa, el queso es el
+                      factor determinante
+                    </p>
+                    <h5>550 GRAMOS DE QUESO.</h5>
+                    <a href="#" class="btn btn-night">Pedila ya!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-item">
+                <div class="card mb-3 text-center" style="width: 18rem">
+                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Especialized MUSSA</h5>
+                    <p class="card-text">
+                      La mejor pizza con la que cuenta la casa, el queso es el
+                      factor determinante
+                    </p>
+                    <h5>550 GRAMOS DE QUESO.</h5>
+                    <a href="#" class="btn btn-night">Pedila ya!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="navbar navbar-expand-md justify-content-center text-center" style="background-color: #362207;">
-        <ul class="nav ">
-            <li class="nav-item"><a href="#" class="nav-link text-white ">Preguntas frecuentes</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white ">Contactanos</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white ">Términos y condiciones</a></li>
-            <li class="nav-item"><a href="#" class="nav-link text-white ">Privacidad</a></li>
-        </ul>
-    </footer> 
-</body>
+    <footer
+      class="navbar navbar-expand-md justify-content-center text-center"
+      style="background-color: #362207"
+    >
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">Preguntas frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">Contactanos</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">Términos y condiciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">Privacidad</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
