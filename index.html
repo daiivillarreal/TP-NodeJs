@@ -21,7 +21,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./lib/bootstrap-extension.js"></script>
-    <link rel="icon" type="image/x-icon" href="src/utensils-solid.svg" />
+    <link rel="icon" type="image/x-icon" href="images/utensils-solid.svg" />
     <title>TP Codo a Codo Nodejs</title>
   </head>
   <body>
@@ -84,63 +84,13 @@
           <li><a href="#">Registrarse</a></li>
         </ul>
       </div>
-      <!-- 
-      <nav
-        class="navbar navbar-expand-md navbar-dark sticky-top"
-        style="background-color: rgb(96, 65, 21)"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
-        >
-          <i
-            class="fa-solid fa-utensils fa-xl ms-2"
-            style="color: rgb(216, 183, 110)"
-          ></i>
-          <span class="fs-4 ms-2">A Comer</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          id="navbarSupportedContent"
-          class="collapse navbar-collapse flex-grow-0"
-        >
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link link-light" aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-warning text-white-50">Menú</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-warning text-white-50"
-                >Mi Pedido</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-warning text-white-50">Login</a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
       <nav
         class="justify-content-between"
         style="background-color: rgb(96, 65, 21)"
       >
         <a
           href="index.html"
-          class="multi-navbar-brand d-flex align-items-center text-white text-decoration-none"
+          class="d-flex align-items-center text-white text-decoration-none"
         >
           <i
             class="fa-solid fa-utensils fa-xl ms-2"
@@ -151,14 +101,6 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Conocé nuestro menú</a></li>
-          <!-- <li>
-            <a class="dropdown-toggle">Products</a>
-            <ul>
-              <li><a href="#product-1">Product 1</a></li>
-              <li><a href="#product-2">Product 2</a></li>
-              <li><a href="#product-3">Another product</a></li>
-            </ul>
-          </li> -->
           <li><a href="#">Hacé tu pedido</a></li>
           <li><a href="#">Seguí tu pedido</a></li>
         </ul>
@@ -181,40 +123,42 @@
           <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="2000">
               <img
-                src="src/sushi.jpg"
+                src="images/sushi.webp"
                 class="position-relative d-block img-ds img-rs"
                 style="filter: brightness(0.5)"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="src/pizza.jpg"
+                src="images/pizza.webp"
                 class="position-relative d-block img-ds img-rs"
                 style="filter: brightness(0.5)"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="src/salad.jpg"
+                src="images/salad.webp"
                 class="position-relative d-block img-ds img-rs"
                 style="filter: brightness(0.5)"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="src/pasta.jpg"
+                src="images/pasta.webp"
                 class="position-relative d-block img-ds img-rs"
                 style="filter: brightness(0.5)"
               />
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img
-                src="src/parrilla.jpg"
+                src="images/parrilla.webp"
                 class="position-relative d-block img-ds img-rs"
                 style="filter: brightness(0.5)"
               />
             </div>
-            <div class="container hidden-xs image-txt text-white">
+            <div
+              class="container hidden-xs image-txt text-white d-none d-md-block"
+            >
               <div class="col-md-12 text-center position-relative">
                 <div class="box">
                   <h1 class="p-3">
@@ -231,7 +175,7 @@
         <div class="card mb-3 border-0 bg-dark rounded-0">
           <div class="row g-0">
             <div class="col-md-3 border-end border-white">
-              <img src="src/platos.jpg" class="img-fluid rounded-start" />
+              <img src="images/platos.webp" class="img-fluid rounded-start" />
             </div>
             <div class="col-md-6">
               <div class="card-body text-white text-center p-5">
@@ -248,7 +192,7 @@
               </div>
             </div>
             <div class="col-md-3 border-start border-white">
-              <img src="src/wok.jpg" class="img-fluid rounded-start" />
+              <img src="images/wok.webp" class="img-fluid rounded-start" />
             </div>
           </div>
         </div>
@@ -256,14 +200,14 @@
       <section>
         <div class="container hidden-xs image-txt text-white">
           <div class="col-md-12 text-center position-relative">
-            <h2 class="p-3 text-chocolate">Mirá las ofertas de la semana</h2>
+            <h2 class="text-chocolate">Mirá las ofertas de la semana</h2>
           </div>
         </div>
-        <div class="slider position-relative d-block img-ds img-rs">
+        <div class="slider position-relative d-block">
           <div class="scroll position-relative img-ds img-rs">
             <div class="slider-item">
               <div class="card mb-3 text-center" style="width: 18rem">
-                <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                <img src="./images/pizza.webp" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Especialized MUSSA</h5>
                   <p class="card-text">
@@ -278,7 +222,11 @@
             <div class="slider-item">
               <div class="slider-item">
                 <div class="card mb-3 text-center" style="width: 18rem">
-                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./images/pizza.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Especialized MUSSA</h5>
                     <p class="card-text">
@@ -294,7 +242,11 @@
             <div class="slider-item">
               <div class="slider-item">
                 <div class="card mb-3 text-center" style="width: 18rem">
-                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./images/pizza.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Especialized MUSSA</h5>
                     <p class="card-text">
@@ -310,7 +262,11 @@
             <div class="slider-item">
               <div class="slider-item">
                 <div class="card mb-3 text-center" style="width: 18rem">
-                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./images/pizza.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Especialized MUSSA</h5>
                     <p class="card-text">
@@ -326,7 +282,11 @@
             <div class="slider-item">
               <div class="slider-item">
                 <div class="card mb-3 text-center" style="width: 18rem">
-                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./images/pizza.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Especialized MUSSA</h5>
                     <p class="card-text">
@@ -342,7 +302,11 @@
             <div class="slider-item">
               <div class="slider-item">
                 <div class="card mb-3 text-center" style="width: 18rem">
-                  <img src="./src/pizza.jpg" class="card-img-top" alt="..." />
+                  <img
+                    src="./images/pizza.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
                   <div class="card-body">
                     <h5 class="card-title">Especialized MUSSA</h5>
                     <p class="card-text">

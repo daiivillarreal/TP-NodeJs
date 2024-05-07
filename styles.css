@@ -19,10 +19,13 @@ body{
 .box {
     background-color: rgba(55, 42, 17, 0.5);
     height: 10rem;
-    align-content: center;
+    max-width: 100%;
+    width: 100;
+    /* align-content: center;
     margin-left: 5rem;
     margin-right: 5rem;
-    border-radius: 15px;
+    border-radius: 0px; */
+    
 }
 
 #card{
