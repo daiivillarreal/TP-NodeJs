@@ -17,22 +17,22 @@
     <title>Registro e inicio de sesion</title>
   </head>
   <body>
-    <div class="container-form">
+    <div class="container-form register hide">
       <div class="information">
         <div class="info-child">
-          <h1>Bienvenido</h1>
+          <h1>Si ya estas registrado</h1>
           <p>
             Iniciá sesión y disfrutá de todos nuestros sabores, promociones y
             sorpresas!
           </p>
-          <input type="button" value="Iniciá Sesión" />
+          <input type="button" value="Iniciá Sesión" id="sign-in" />
         </div>
       </div>
       <div class="form-information">
         <div class="form-information-child">
           <h2>
-            Registráte ahora y descubrí un mundo de sabores. ¡Te esperamos con
-            los cubiertos puestos!
+            Sino, registráte ahora y descubrí un mundo de sabores. ¡Te esperamos
+            con los cubiertos puestos!
           </h2>
           <div class="icons">
             <i class="bx bxl-google"></i>
@@ -51,12 +51,58 @@
             </label>
             <label for="">
               <i class="bx bx-lock-alt"></i>
-              <input type="password" name="" id="" placeholder="Contrasena" />
+              <input type="password" name="" id="" placeholder="Contraseña" />
             </label>
             <input type="submit" value="Registráte" />
+            <a href="index.html">
+              <input type="button" value="Cancelar" />
+            </a>
           </form>
         </div>
       </div>
     </div>
+
+    <div class="container-form login">
+      <div class="information">
+        <div class="info-child">
+          <h3>Registráte...</h3>
+          <p>
+            Y descubrí un mundo de sabores. ¡Te esperamos con los cubiertos
+            puestos!
+          </p>
+          <input type="button" value="Registráte" id="sign-up" />
+        </div>
+      </div>
+      <div class="form-information">
+        <div class="form-information-child">
+          <h3 class="style-ingresa">Login</h3>
+          <h2>
+            Si ya tenés una cuenta, ingresá y disfrutá de todos nuestros
+            sabores, promociones y sorpresas!
+          </h2>
+          <div class="icons">
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-github"></i>
+            <i class="bx bxl-linkedin"></i>
+          </div>
+
+          <form class="form">
+            <label for="">
+              <i class="bx bx-envelope"></i>
+              <input type="email" name="" id="" placeholder="E-mail" />
+            </label>
+            <label for="">
+              <i class="bx bx-lock-alt"></i>
+              <input type="password" name="" id="" placeholder="Contraseña" />
+            </label>
+            <input type="submit" value="Ingresá" id="sign-up" />
+            <a href="index.html">
+              <input type="button" value="Cancelar" />
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/logreg.js"></script>
   </body>
 </html>

@@ -32,6 +32,7 @@ body {
     background-color: rgba(96, 65, 21);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    
 }
 
 .info-child {
@@ -40,6 +41,17 @@ body {
 }
 
 .info-child h1 {
+    font-size: 2.5rem;
+    color: rgb(216, 183, 110);
+}
+
+.style-ingresa {
+    font-size: 2rem;
+    color: rgb(216, 183, 110);
+    margin-bottom: 10px;
+}
+
+.info-child h3 {
     font-size: 2.5rem;
     color: rgb(216, 183, 110);
 }
@@ -67,6 +79,7 @@ body {
     color: #000;
     
 }
+
 
 
 
@@ -162,7 +175,9 @@ body {
 
 }
 
-.form input[type="submit"]{
+
+
+.form input[type="submit"], input[type="button"]{
     background-color: transparent;
     color: rgb(216, 183, 110);
     border-radius: 20px;
@@ -173,12 +188,19 @@ body {
     transition: background-color .3s ease;
 }
 
-.form input[type="submit"]:hover {
+.form input[type="submit"]:hover, input[type="button"]:hover {
     background-color: rgb(216, 183, 110);
         border: solid 2px rgb(216, 183, 110);
         color: #000;
 }
 
+
+
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
 /*RESPONSIVE FORM*/
 @media screen and (max-width:750px) {
     html{
